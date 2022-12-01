@@ -1,3 +1,4 @@
+#CODE FOR DAY1
 import numpy as np
 file1 = open("day1.txt","r")
 data = file1.read().split('\n')
