@@ -8,12 +8,12 @@ ele_list = []
 count = 0
 for i in range(len(data)):
     if(data[i]!=''):
-        ele_list.append(int(data[i]))
+        ele_list.append(int(data[i])) #ele_list stores each data
     else:
         sum_list.append(sum(ele_list))
         ele_list = []
 sum_list = np.sort(sum_list)
-total = sum_list[-1]+sum_list[-2]+sum_list[-3]
+total = sum_list[-1]+sum_list[-2]+sum_list[-3] #stores the value of 3 max values
 print(total)
 
 
