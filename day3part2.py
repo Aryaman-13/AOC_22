@@ -7,8 +7,8 @@ while(j<len(data)):
     word1 = data[j]
     word2 = data[j+1]
     word3 = data[j+2]
-    a = list(set(word1)&set(word2)&set(word3))
-    for b in a:
+    common_letter_list = list(set(word1)&set(word2)&set(word3))
+    for b in common_letter_list:
         if(b.isupper()==True):
             common_list.append(ord(b)-38)
         else:
